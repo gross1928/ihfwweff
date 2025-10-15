@@ -17,11 +17,11 @@ OPENROUTER_API_KEY = os.getenv('OPENROUTER_API_KEY')
 
 # Модель для использования
 # Рекомендуемые uncensored модели:
-# - mythomax (gryphe/mythomax-l2-13b) - лучший выбор для RP и NSFW ⭐
+# - nous-hermes (nousresearch/nous-hermes-2-mixtral-8x7b-dpo) - умная, следует инструкциям ⭐
+# - mythomax (gryphe/mythomax-l2-13b) - креативная для RP, но может галлюцинировать
 # - llama-70b (meta-llama/llama-2-70b-chat) - максимальное качество
-# - nous-hermes (nousresearch/nous-hermes-2-mixtral-8x7b-dpo)
-# - dolphin (cognitivecomputations/dolphin-mixtral-8x7b)
-MODEL_NAME = os.getenv('MODEL_NAME', 'mythomax')
+# - dolphin (cognitivecomputations/dolphin-mixtral-8x7b) - раскованная
+MODEL_NAME = os.getenv('MODEL_NAME', 'nous-hermes')
 
 # ============================================================================
 # НАСТРОЙКИ ГЕНЕРАЦИИ
@@ -34,9 +34,9 @@ MAX_HISTORY_LENGTH = 10
 
 # Креативность модели (0.0 - 1.0)
 # 0.7 = более предсказуемо и последовательно (лучше для логики)
-# 0.9 = сбалансированно
+# 0.85 = сбалансированно (рекомендуется для Nous-Hermes)
 # 1.0 = максимально креативно (может галлюцинировать)
-TEMPERATURE = 0.75
+TEMPERATURE = 0.85
 
 # Максимальная длина ответа в токенах
 # ~1 токен = ~0.75 слова в английском, ~0.5 слова в русском
