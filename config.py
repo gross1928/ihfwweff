@@ -17,10 +17,10 @@ OPENROUTER_API_KEY = os.getenv('OPENROUTER_API_KEY')
 
 # Модель для использования
 # Рекомендуемые uncensored модели:
-# - nous-hermes (nousresearch/nous-hermes-2-mixtral-8x7b-dpo) - умная, следует инструкциям ⭐
-# - mythomax (gryphe/mythomax-l2-13b) - креативная для RP, но может галлюцинировать
-# - llama-70b (meta-llama/llama-2-70b-chat) - максимальное качество
-# - dolphin (cognitivecomputations/dolphin-mixtral-8x7b) - раскованная
+# - nous-hermes (Hermes 3 70B Instruct) - умная, следует инструкциям ⭐
+# - hermes-4 (Hermes 4 70B) - новейшая версия, очень умная
+# - nous-hermes-8b (Hermes 2 Pro 8B) - дешевая, но качественная
+# - mythomax (MythoMax 13B) - креативная для RP, может галлюцинировать
 MODEL_NAME = os.getenv('MODEL_NAME', 'nous-hermes')
 
 # ============================================================================
