@@ -13,7 +13,7 @@ class OpenRouterProvider:
     # Популярные uncensored модели на OpenRouter
     MODELS = {
         "mythomax": "gryphe/mythomax-l2-13b",
-        "nous-hermes": "nousresearch/hermes-3-llama-3.1-70b-instruct",  # Hermes 3 70B
+        "nous-hermes": "nousresearch/hermes-3-llama-3.1-70b",  # Hermes 3 70B
         "nous-hermes-8b": "nousresearch/hermes-2-pro-llama-3-8b",  # Hermes 2 Pro 8B (дешевле)
         "hermes-4": "nousresearch/hermes-4-70b",  # Hermes 4 70B (новейшая)
         "llama-70b": "meta-llama/llama-2-70b-chat",
